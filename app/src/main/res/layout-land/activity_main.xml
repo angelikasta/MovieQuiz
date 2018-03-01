@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:clipToPadding="true"
+    android:fillViewport="true"
+    android:scrollbarStyle="insideOverlay">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context="com.example.android.moviequiz.MainActivity">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_gravity="center_horizontal"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart"
+                android:src="@drawable/logo" />
+
+            <EditText
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="30dp"
+                android:hint="NAME"
+                android:fontFamily="@font/diplomata"
+                android:inputType="text|textCapWords"
+                android:shadowColor="@android:color/transparent"
+                android:textAlignment="center"
+                android:textColor="#F8CD50"
+                tools:text="NAME" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/startButton"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:cropToPadding="false"
+            android:onClick="startQuiz"
+            android:scaleType="fitEnd"
+            android:src="@drawable/startbutton" />
+
+    </RelativeLayout>
+
+</ScrollView>

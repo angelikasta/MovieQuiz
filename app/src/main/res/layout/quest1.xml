@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:clipToPadding="true"
+    android:fillViewport="true"
+    android:scrollbarStyle="insideOverlay">
+
+    <RelativeLayout
+        android:id="@+id/TopRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true">
+
+        <RelativeLayout
+            android:id="@+id/secondTopRel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--Question 1 -->
+
+            <ImageView
+                android:id="@+id/background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:scaleType="centerCrop"
+                android:src="@drawable/seats" />
+
+
+            <RelativeLayout
+                android:id="@+id/bottomRelative"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="40dp">
+                <!--android:background="#59ffffff"> add rectangle as a shape and rounded corners -->
+
+                <ImageView
+                    android:id="@+id/questionBorder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/marquee" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/questionBorder"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="17dp"
+                    android:fontFamily="@font/diplomata"
+                    android:text="QUESTION 1"
+                    android:textColor="#F8CD50"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="33dp"
+                    android:fontFamily="serif"
+                    android:text="In what year was the original Jurassic Park film released?"
+                    android:textAlignment="center"
+                    android:textColor="#F7E6B7"
+                    android:textSize="22sp" />
+
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView2"
+                    android:layout_marginTop="120dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/answ" />
+
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/imageView2"
+                    android:layout_marginTop="78dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/answ" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/imageView3"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/answ" />
+
+
+                <ImageView
+                    android:id="@+id/nextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="19dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:cropToPadding="true"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/nextbutton" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imageView2"
+                    android:layout_centerHorizontal="true">
+
+                    <RadioButton
+                        android:id="@+id/wrong_answer_1_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="26dp"
+                        android:text="1995"
+                        android:textColor="#000" />
+
+                    <RadioButton
+                        android:id="@+id/wrong_answer_1_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="39dp"
+                        android:text="1991"
+                        android:textColor="#000" />
+
+                    <RadioButton
+                        android:id="@+id/right_answer_1_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="41dp"
+                        android:text="1993"
+                        android:textColor="#000" />
+                </RadioGroup>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/topRelq2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/secondTopRel">
+
+            <!--Question 2 -->
+
+            <ImageView
+                android:id="@+id/background2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:scaleType="centerCrop"
+                android:src="@drawable/seats" />
+
+
+            <RelativeLayout
+                android:id="@+id/TopRelative2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="40dp">
+                <!--android:background="#59ffffff"> add rectangle as a shape and rounded corners -->
+
+                <ImageView
+                    android:id="@+id/questionBorder2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/marquee" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/questionBorder2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="17dp"
+                    android:fontFamily="@font/diplomata"
+                    android:text="QUESTION 2"
+                    android:textColor="#F8CD50"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView21"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="33dp"
+                    android:fontFamily="serif"
+                    android:text="Which actress played Katniss Everdeen in The Hunger Games?"
+                    android:textAlignment="center"
+                    android:textColor="#F7E6B7"
+                    android:textSize="18sp" />
+
+
+                <ImageView
+                    android:id="@+id/imageView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView22"
+                    android:layout_marginTop="120dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/answ" />
+
+
+                <ImageView
+                    android:id="@+id/imageView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/imageView22"
+                    android:layout_marginTop="78dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/answ" />
+
+                <ImageView
+                    android:id="@+id/imageView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/imageView23"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/answ" />
+
+
+                <ImageView
+                    android:id="@+id/nextButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView24"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="19dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:cropToPadding="true"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/nextbutton" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/imageView22"
+                    android:layout_centerHorizontal="true">
+
+                    <RadioButton
+                        android:id="@+id/wrong_answer_2_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="26dp"
+                        android:text="Alexia Maier"
+                        android:textColor="#000" />
+
+                    <RadioButton
+                        android:id="@+id/right_answer_2_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="39dp"
+                        android:text="Jennifer Lawrence"
+                        android:textColor="#000" />
+
+                    <RadioButton
+                        android:id="@+id/wrong_answer_2_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="41dp"
+                        android:text="Haley Bennett"
+                        android:textColor="#000" />
+                </RadioGroup>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/topRelq3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topRelq2">
+
+            <!--Question 3 -->
+
+            <ImageView
+                android:id="@+id/background3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:scaleType="centerCrop"
+                android:src="@drawable/seats" />
+
+
+            <RelativeLayout
+                android:id="@+id/TopRelative3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="40dp">
+                <!--android:background="#59ffffff"> add rectangle as a shape and rounded corners -->
+
+                <ImageView
+                    android:id="@+id/questionBorder3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/marquee" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/questionBorder3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="17dp"
+                    android:fontFamily="@font/diplomata"
+                    android:text="QUESTION 3"
+                    android:textColor="#F8CD50"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView31"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="33dp"
+                    android:fontFamily="serif"
+                    android:text="Which of these films are in IMDb Top 250 Movies of All Time?"
+                    android:textAlignment="center"
+                    android:textColor="#F7E6B7" />
+
+
+                <ImageView
+                    android:id="@+id/imageView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView32"
+                    android:layout_marginTop="120dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/answ" />
+
+
+                <ImageView
+                    android:id="@+id/imageView33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/imageView32"
+                    android:layout_marginTop="78dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/answ" />
+
+                <ImageView
+                    android:id="@+id/imageView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/imageView33"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/answ" />
+
+
+                <ImageView
+                    android:id="@+id/nextButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView34"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="19dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:cropToPadding="true"
+                    android:scaleType="fitEnd"
+                    android:src="@drawable/nextbutton" />
+
+                <RadioGroup
+                    android:id="@+id/checkboxGroup3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/imageView32"
+                    android:layout_centerHorizontal="true">
+
+                    <CheckBox
+                        android:id="@+id/right_answer_3_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="26dp"
+                        android:text="Inception"
+                        android:textColor="#000" />
+
+                    <CheckBox
+                        android:id="@+id/wrong_answer_3_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="39dp"
+                        android:text="Resident Evil"
+                        android:textColor="#000" />
+
+                    <CheckBox
+                        android:id="@+id/right_answer_3_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="41dp"
+                        android:text="Pulp Fiction"
+                        android:textColor="#000" />
+                </RadioGroup>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/TopRelEdit"
+            android:layout_below="@id/topRelq3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--Question 1 -->
+
+            <ImageView
+                android:id="@+id/backgroundEd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:scaleType="centerCrop"
+                android:src="@drawable/seats" />
+
+
+            <RelativeLayout
+                android:id="@+id/bottomRelativeEd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="40dp">
+                <!--android:background="#59ffffff"> add rectangle as a shape and rounded corners -->
+
+                <ImageView
+                    android:id="@+id/questionBorderEd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/marquee" />
+
+                <TextView
+                    android:id="@+id/textViewEd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/questionBorderEd"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="17dp"
+                    android:fontFamily="@font/diplomata"
+                    android:text="QUESTION 4"
+                    android:textColor="#F8CD50"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView2Ed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewEd"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="33dp"
+                    android:fontFamily="serif"
+                    android:text="Who played the main character in The Truman Show?"
+                    android:textAlignment="center"
+                    android:textColor="#F7E6B7"
+                    android:textSize="18sp" />
+
+
+                <ImageView
+                    android:id="@+id/imageView4Ed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView2Ed"
+                    android:layout_marginTop="174dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:scaleType="fitStart"
+                    app:srcCompat="@drawable/answ" />
+
+                <EditText
+                    android:id="@+id/userInputEd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/nextButtonEd"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="14dp"
+                    android:fontFamily="@font/diplomata"
+                    android:gravity="center_horizontal"
+                    android:hint="type here"
+                    android:inputType="text"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent" />
+
+
+                <ImageButton
+                    android:id="@+id/nextButtonEd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView4Ed"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="19dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:cropToPadding="true"
+                    android:scaleType="fitEnd"
+                    android:onClick="submitAnswers"
+                    android:src="@drawable/submitbutton" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

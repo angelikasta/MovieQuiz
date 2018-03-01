@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MovieQuiz</string>
+    <string name="username_error">Please input your name</string>
+    <string name="correct_answer_q4">Jim Carey</string>
+    <string name="quizmessage"> Well done! Your results are coming up </string>
+    <string name="fill_error">Please answer all questions</string>
+</resources>
